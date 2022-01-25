@@ -15,7 +15,7 @@ class TripsTableSeader extends Seeder
     {
         for($i=0; $i<100; $i++){
             $newTrip = new Trip();
-            $newTrip->from_date = $faker->dateTimeBetween('now', '30 days');
+            $newTrip->from_date = $faker->dateTimeBetween('30 days', '2 years');
             $newTrip->duration = $faker->numberBetween(1,20);
             $newTrip->city = $faker->city();
             $newTrip->price = $faker->randomFloat(2,1,9999);
